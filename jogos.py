@@ -9,9 +9,9 @@ print("(1) Forca (2) Advinhação)")
 
 jogo = int(input("Qual o jogo?"))
 
-if(jogo == 1):
+if (jogo == 1):
     print("Jogando forca")
-    jogar_forca()
-elif(jogo == 2):
+    forca.jogar()
+elif (jogo == 2):
     print("Jogando advinhação")
-    jogar_advinhacao()
+    adivinhacao.jogar()
