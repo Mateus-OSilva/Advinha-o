@@ -1,6 +1,8 @@
 import random
 
 
+
+
 def jogar():
 
     imprime_mensagem_abertura()
@@ -19,11 +21,7 @@ def jogar():
         chute = pede_chute()
 
         if (chute in palavra_secreta):
-            index = 0
-            for letra in palavra_secreta:
-                if (chute == letra):
-                    letras_acertadas[index] = letra
-                index += 1
+            marca_chute_correto(chute, letras_acertadas, palavra_secreta)
 
         else:
             erros += 1
@@ -69,7 +67,12 @@ def pede_chute():
     chute = chute.strip().upper()
     return chute
 
-
+def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
+    index = 0
+    for letra in palavra_secreta:
+        if (chute == letra):
+            letras_acertadas[index] = letra
+        index += 1
 
 
 
