@@ -22,15 +22,14 @@ def jogar():
         if (chute in palavra_secreta):
             index = 0
             for letra in palavra_secreta:
-                if (chute == letra()):
+                if (chute == letra):
                     letras_acertadas[index] = letra
-                index = index + 1
+                index += 1
 
         else:
             erros += 1
 
         enforcou = erros == 6
-
         print(letras_acertadas)
 
     print("FIm do jogo")
