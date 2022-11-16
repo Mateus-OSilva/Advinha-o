@@ -2,7 +2,6 @@ import random
 
 
 
-
 def jogar():
 
     imprime_mensagem_abertura()
@@ -31,10 +30,13 @@ def jogar():
         print(letras_acertadas)
 
     if (acertou):
-        print("Você ganhou!!")
+        imprime_mensagem_vencedor()
     else:
-        print("Você perdeu!")
-    print("Fim do jogo")
+        imprime_mensagem_perdedor()
+        
+  
+
+
 
 
 
@@ -74,7 +76,12 @@ def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
             letras_acertadas[index] = letra
         index += 1
 
+def imprime_mensagem_vencedor():
+    print("Parabens, Acertou")
 
+
+def imprime_mensagem_perdedor():
+    print("Vish, não foi desta vez")
 
 
 if (__name__ == "__main__"):
