@@ -1,7 +1,6 @@
 import random
 
-def inicializa_letras_acertadas(palavra):
-    return ["_" for letra in palavra]
+
 
 def jogar():
 
@@ -42,8 +41,7 @@ def jogar():
     print("Fim do jogo")
 
 
-if (__name__ == "__main__"):
-    jogar()
+
 
 
 def imprime_mensagem_abertura():
@@ -64,3 +62,12 @@ def carrega_palavra_secreta():
     numero = random.randrange(0,len(palavras))
     palavra_secreta = palavras[numero].upper()
     return palavra_secreta
+
+def inicializa_letras_acertadas(palavra):
+    return ["_" for letra in palavra]
+
+
+
+
+if (__name__ == "__main__"):
+    jogar()
