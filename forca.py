@@ -14,11 +14,10 @@ def jogar():
 
     arquivo.close()
 
-    palavra_secreta = "banana".upper()
-    letras_acertadas = ["_" for letra in palavra_secreta]
+    print(palavras)
 
-    for letra in palavra_secreta:
-        letras_acertadas.append["_"]
+    palavra_secreta = "maça".upper()
+    letras_acertadas = ["_" for letra in palavra_secreta]
 
     enforcou = False
     acertou = False
